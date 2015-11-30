@@ -17,7 +17,7 @@ class Review < ActiveRecord::Base
 
   validates :comment, length: {maximum: 140}
 
-  
+  # remove comments
 
   # validations
   # validate rating up 10

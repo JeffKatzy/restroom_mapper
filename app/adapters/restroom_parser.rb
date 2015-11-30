@@ -4,6 +4,7 @@
 
 # class RestroomParser
 
+#  remove file if unused
 #   def self.parse
 #     file = File.join(Rails.root, 'app', 'adapters', 'Directory_of_parks.csv')
 #     public_toilets = File.read(file)

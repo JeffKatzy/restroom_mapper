@@ -27,6 +27,7 @@ class PublicPark < ActiveRecord::Base
   # PublicPark.gmaps_key
 
   def average_rating
+    # double negative
     if !(self.reviews.empty?)
       avg = self.reviews.average(:rating).to_f
       avg = avg.round(1)

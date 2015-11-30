@@ -2,6 +2,7 @@ class PublicParksController < ApplicationController
 
   def index
     @parks = PublicPark.all 
+    # choose better name than hash
     @hash = {lat: PublicPark.first.latitude, lng: PublicPark.first.longitude}
   end
 
@@ -31,7 +32,7 @@ class PublicParksController < ApplicationController
 
   def get_lat_lng(arg1)
     boroughs = ["Bronx County", "Kings County", "New York County", "Queens County", "Richmond County"]
-
+    # move long methods into a smaller method
     if arg1.length > 0
 
       # get all values from geocoder results

@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-
+  # remove unused actions
   def index
   end
 
@@ -19,6 +19,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to root_path
     else
+      # remove commented code
       # flash[:notice] = "and nobody is that interested in your business..."
       render :new
     end

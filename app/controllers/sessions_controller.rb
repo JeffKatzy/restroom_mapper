@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+  # remove unused actions
   def index
 
   end
